@@ -16,11 +16,17 @@ Android isolates apps through application sandboxing and restricts access to sen
 
 Resource: Request runtime permissions | Android Developers - https://developer.android.com/training/permissions/requesting
 ## Networking
+DNS over HTTPS (DoH), defined in RFC 8484, sends DNS queries and responses over an encrypted HTTPS connection to a selected resolver. It reduces interception and modification of DNS traffic along that path. However, the resolver can still observe queries, and DoH does not hide the destination IP address or encrypt the entire browsing session. It also does not independently verify DNS records without additional protections such as DNSSEC. Website HTTPS remains essential.
 
+Resource: RFC 8484 - DNS Queries over HTTPS (DoH) - https://www.rfc-editor.org/rfc/rfc8484
 ## Cybersecurity
+Phishing-resistant authentication uses cryptographic binding to the legitimate verifier or authenticated channel, preventing attackers from simply reusing credentials captured on fake sites. Under NIST SP 800-63B, correctly implemented FIDO2/WebAuthn authenticators, including passkeys, and suitable PKI smart cards can provide phishing resistance. Manually entered SMS, email, or authenticator-app one-time codes are not phishing-resistant because they can be relayed. The authority should prioritize appropriately implemented phishing-resistant multi-factor authentication.
 
+Resource: NIST SP 800-63B - Digital Identity Guidelines: Authentication and Authenticator Management - https://pages.nist.gov/800-63-4/sp800-63b.html
 ## Data
+Oman's Personal Data Protection Law (Royal Decree 6/2022, amended by 68/2026) exempts processing by government bodies when exercising powers assigned by law. Such bodies fall under the government's Personal Data Protection Policy (Circular 6/2024), which addresses privacy notices, secure handling, access, disclosure, and transfers. The authority should verify the exemption for each processing activity, apply the relevant policy, restrict unnecessary collection, and establish safeguards for citizen records. Non-exempt processing must meet applicable statutory requirements.
 
+Resource: Personal Data Protection | Ministry of Transport, Communications and Information Technology - https://www.mtcit.gov.om/sectors/governance/personal
 ## Misconception in My Track
 
 ## Open Question
