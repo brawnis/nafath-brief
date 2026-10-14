@@ -4,11 +4,17 @@ Track: AI
 ## Overview
 A government authority plans to provide citizens with one digital identity for accessing multiple services through a website and mobile app. OpenID Connect supports identity verification, while OAuth 2.0 controls delegated access to protected resources. An AI system may flag suspicious logins, but incorrect or biased decisions could deny legitimate users access. Android permissions limit unnecessary access to device features, and DNS over HTTPS protects DNS traffic between clients and their resolvers. Phishing-resistant authenticators help prevent credential theft through imitation login pages. Oman's applicable personal-data legislation and government policies shape how citizen information is processed and safeguarded. These fields must work together: secure protocols, trustworthy AI, privacy protections, and accountable decisions all contribute to public confidence in the national service.
 ## Software
+OAuth 2.0 is an authorization framework that allows applications to receive limited access to protected resources, commonly through access tokens. It does not, by itself, define a standard way to authenticate users. OpenID Connect (OIDC) builds an identity layer on OAuth 2.0, introducing an ID Token that conveys authentication information to the client. For the national service, OIDC supports user sign-in, whereas OAuth 2.0 enables delegated access to government APIs.
 
+Resource: OpenID Connect Core 1.0 incorporating errata set 2 - https://openid.net/specs/openid-connect-core-1_0.html
 ## AI
+Using NIST AI RMF 1.0, the authority should Govern responsibilities, Map impacts, Measure performance, and Manage identified risks. Before deployment, it should test false positives that block legitimate citizens, missed attacks, unequal outcomes across groups, privacy exposure, and adversarial manipulation. Representative test data, documented thresholds, human review of disputed flags, and fallback access procedures reduce harm. After launch, the team should monitor model drift and reassess security, fairness, and reliability as threats evolve.
 
+Resource: Artificial Intelligence Risk Management Framework (AI RMF 1.0), NIST AI 100-1 - https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf
 ## Mobile
+Android isolates apps through application sandboxing and restricts access to sensitive capabilities. On Android 6.0 (API 23) and later, apps using the runtime permission model must request dangerous permissions, such as camera or location access, while the app is running. The national login app should request only necessary permissions when their features are used, explain the request in context, and handle denial or later revocation. Basic sign-in should not depend on unrelated permissions.
 
+Resource: Request runtime permissions | Android Developers - https://developer.android.com/training/permissions/requesting
 ## Networking
 
 ## Cybersecurity
