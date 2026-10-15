@@ -28,5 +28,6 @@ Oman's Personal Data Protection Law (Royal Decree 6/2022, amended by 68/2026) ex
 
 Resource: Personal Data Protection | Ministry of Transport, Communications and Information Technology - https://www.mtcit.gov.om/sectors/governance/personal
 ## Misconception in My Track
-
+A common misconception is that high test accuracy makes a suspicious-login AI model safe to deploy. NIST AI RMF 1.0, Section 3, "AI Risks and Trustworthiness," explains why accuracy alone is insufficient: systems can be accurate yet opaque, or secure yet unfair. A model may wrongly flag legitimate users, perform differently across groups, or deteriorate as attacks change. The authority should therefore measure false-positive and false-negative rates, assess fairness and explainability, document decisions, provide human review and recovery, and continue monitoring after release. Trustworthiness is a lifecycle responsibility, not a single accuracy score.
 ## Open Question
+How can the authority audit false-positive rates across citizen groups while minimizing sensitive-data collection, and what measurable review and account-recovery deadlines should apply to wrongly flagged logins?
